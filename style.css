@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    background-color: lightgrey;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+main h1{
+    text-align: center;
+    color: royalblue;
+    font-family: cursive;
+}
+.wapper{
+    background-color: white;
+    width: 600px;
+    padding: 20px;
+}
+.todo-item{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+.todo-item input{
+   border: none;
+   padding: 10px;
+   margin: 10px;
+   width: 300px;
+   background-color: white;
+   border-bottom: 2px solid black;
+   transition: all 1s;
+   font-size: 20px;
+}
+.todo-item input:placeholder-shown{
+    font-size: 20px;
+}
+.todo-item input:focus{
+    border: none;
+    border-bottom: 2px solid greenyellow;
+    outline: none;
+}
+.todo-item button{
+    padding: 10px;
+    border: none;
+    margin: 10px 30px;
+    width: 100px;
+    background-color: royalblue;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+.todo-item button:last-child{
+    background-color: red;
+}
+
+.list li{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+.list button{
+    background-color: red;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    color: white;
+    outline: none; 
+    cursor: pointer;   
+
+}
+.list button:last-child{
+    background-color: green;
+}
+
+@media only screen and (max-width: 460px){
+    div.wapper{
+        width: 460px;
+        padding: 20px 0px;
+    }
+   main h1{
+       width: 350px;
+       margin: 0px;
+   }
+   div.list li{
+       font-size: 18px;
+   }
+}
+@media only screen and (max-width: 670px){
+    .wapper{
+        width: 670px;
+        padding: 20px;
+    }
+
+}
